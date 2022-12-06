@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
 
     <div class="row">
@@ -9,7 +10,7 @@
                 <thead>
 
                   <tr>
-
+                   <!-- <th scope="col">Course ID</th>-->
                     <th scope="col">Cousre Title</th>
 
                     <th scope="col">Course Description</th>
@@ -27,17 +28,16 @@
 
                   <tr *ngFor="let i of data">
 
-                    <th scope="row">{{i._id}}</th>
+                    <!--<th scope="row">{{i._id}}</th>-->
 
-                    <td>{{i.courseTitle}}</td>
+                    <td>{{i.coursetitle}}</td>
 
-                    <td>{{i.courseDescription}}</td>
+                    <td>{{i.description}}</td>
 
-                    <td>{{i.courseDuration}}</td>
+                    <td>{{i.date}}</td>
+                    <td>{{i.duration}}</td>
 
-                    <td>{{i.courseDate}}</td>
-
-                    <td>{{i.courseVenue}}</td>
+                    <td>{{i.venue}}</td>
                     
 
 
