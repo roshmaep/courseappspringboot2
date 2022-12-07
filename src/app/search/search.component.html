@@ -25,7 +25,7 @@
 
         </div>
         
-        <div class="row" *ngFor="let i of readValues">
+        <div class="row">
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <table class="table">
                     <thead>
@@ -37,7 +37,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr >
+                      <tr *ngFor="let i of readValues" >
                         <td>{{i.description}}</td>
                         <td>{{i.date}}</td>
                         <td>{{i.duration}}</td>
